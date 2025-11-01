@@ -185,19 +185,89 @@
   padding-left: 24px;
 }
 
+@media (max-width: 968px) {
+  .coursework-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  .education-section {
+    padding: 60px 0;
+  }
+
+  .education-content {
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .education-card {
+    padding: 24px;
+  }
+
   .education-header {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+
+  .education-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .education-icon.small {
+    width: 52px;
+    height: 52px;
+  }
+
+  .institution-name {
+    font-size: 1.5rem;
+  }
+
+  .degree {
+    font-size: 1rem;
+  }
+
+  .specialization {
+    font-size: 0.9375rem;
   }
 
   .detail-row {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .detail-item {
+    font-size: 0.875rem;
+  }
+
+  .institution-description,
+  .achievement-note {
+    font-size: 0.9375rem;
+  }
+
+  .coursework-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .coursework-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .coursework-card {
+    padding: 20px;
+  }
+
+  .coursework-category {
+    font-size: 1rem;
+  }
+
+  .course-item {
+    font-size: 0.875rem;
+    padding: 8px 0;
   }
 }
