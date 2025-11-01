@@ -1,0 +1,191 @@
+.leadership-section {
+  padding: var(--section-padding) 0;
+  background: var(--color-surface);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.leadership-card {
+  padding: 28px;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  transition: all var(--transition-normal);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.leadership-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.leadership-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.leadership-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  border-radius: 12px;
+}
+
+.leadership-title-section {
+  flex: 1;
+}
+
+.leadership-position {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.leadership-organization {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.leadership-institution {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.leadership-description {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.responsibilities-section {
+  padding: 16px;
+  background: var(--color-surface);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-accent);
+}
+
+.responsibilities-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibilities-list li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.responsibilities-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.skills-demonstrated {
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.skills-card {
+  padding: 32px;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  transition: all var(--transition-normal);
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.skills-header svg {
+  color: var(--color-accent);
+}
+
+.skills-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-tag {
+  padding: 12px 20px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: all var(--transition-normal);
+}
+
+.skill-tag:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
+}
+
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
