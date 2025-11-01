@@ -125,8 +125,45 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 968px) {
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+}
+
 @media (max-width: 768px) {
+  .achievements-section {
+    padding: 60px 0;
+  }
+
   .achievements-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .achievement-card {
+    padding: 20px;
+  }
+
+  .achievement-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .achievement-category {
+    font-size: 0.75rem;
+  }
+
+  .achievement-title {
+    font-size: 1.25rem;
+  }
+
+  .achievement-description {
+    font-size: 0.9375rem;
+  }
+
+  .achievement-details li {
+    font-size: 0.875rem;
   }
 }
