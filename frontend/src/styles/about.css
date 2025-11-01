@@ -105,7 +105,33 @@
 }
 
 @media (max-width: 640px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .biography p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
   .highlights-grid {
     grid-template-columns: 1fr;
+  }
+
+  .highlight-card {
+    padding: 16px;
+  }
+
+  .highlight-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .highlight-title {
+    font-size: 0.8125rem;
+  }
+
+  .highlight-value {
+    font-size: 0.9375rem;
   }
 }
