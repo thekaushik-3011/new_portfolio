@@ -236,9 +236,76 @@
 @media (max-width: 968px) {
   .research-content {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .interests-card {
     position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-section {
+    padding: 60px 0;
+  }
+
+  .publication-card {
+    padding: 24px;
+  }
+
+  .publication-status {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .status-badge {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .publication-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .publication-title {
+    font-size: 1.125rem;
+  }
+
+  .meta-item,
+  .venue-info,
+  .conference-info,
+  .publication-abstract p {
+    font-size: 0.875rem;
+  }
+
+  .publication-abstract h4,
+  .research-areas h4 {
+    font-size: 0.9375rem;
+  }
+
+  .area-tag {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  .interests-card {
+    padding: 20px;
+  }
+
+  .interests-header {
+    margin-bottom: 16px;
+  }
+
+  .interests-header h3 {
+    font-size: 1.125rem;
+  }
+
+  .interest-item {
+    padding: 10px 0;
+  }
+
+  .interest-item span {
+    font-size: 0.875rem;
   }
 }
