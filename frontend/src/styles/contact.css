@@ -271,5 +271,81 @@
 @media (max-width: 968px) {
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  .contact-headline {
+    font-size: 1.5rem;
+  }
+
+  .contact-subheadline {
+    font-size: 1rem;
+    margin-bottom: 48px;
+  }
+
+  .contact-form-card,
+  .contact-info-card {
+    padding: 24px;
+  }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.875rem;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .info-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-item {
+    padding: 14px;
+  }
+
+  .contact-item .label {
+    font-size: 0.75rem;
+  }
+
+  .contact-item .value {
+    font-size: 0.875rem;
+  }
+
+  .social-title {
+    font-size: 0.9375rem;
+  }
+
+  .social-link {
+    padding: 10px 14px;
+    font-size: 0.9375rem;
+  }
+
+  .resume-download-btn {
+    padding: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .availability-section {
+    padding: 14px;
+  }
+
+  .availability-badge {
+    font-size: 0.9375rem;
+  }
+
+  .response-time {
+    font-size: 0.8125rem;
   }
 }
