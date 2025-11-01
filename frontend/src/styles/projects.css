@@ -263,8 +263,80 @@
   color: var(--color-text-secondary);
 }
 
+@media (max-width: 968px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+}
+
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 0;
+  }
+
+  .project-filters {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.875rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-thumbnail {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.125rem;
+  }
+
+  .project-tagline {
+    font-size: 0.875rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+
+  .achievements-subtitle {
+    font-size: 0.8125rem;
+  }
+
+  .project-achievements .achievements-list li {
+    font-size: 0.8125rem;
+  }
+
+  .tech-tag {
+    font-size: 0.6875rem;
+    padding: 5px 10px;
+  }
+
+  .action-btn {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+
+  .project-card.coming-soon {
+    min-height: 300px;
+  }
+
+  .coming-soon-icon {
+    font-size: 3rem;
+  }
+
+  .coming-soon-content h3 {
+    font-size: 1.25rem;
   }
 }
