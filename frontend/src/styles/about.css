@@ -1,0 +1,111 @@
+.about-section {
+  padding: var(--section-padding) 0;
+  background: var(--color-surface);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.biography p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.biography strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.highlight-text {
+  font-weight: 500;
+  color: var(--color-accent);
+  padding: 16px;
+  background: rgba(14, 165, 233, 0.05);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.about-highlights {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.highlight-card {
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.highlight-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  border-radius: 8px;
+}
+
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.highlight-value {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
