@@ -178,14 +178,78 @@
   box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
 }
 
+@media (max-width: 968px) {
+  .leadership-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+}
+
 @media (max-width: 768px) {
+  .leadership-section {
+    padding: 60px 0;
+  }
+
   .leadership-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .leadership-card {
+    padding: 20px;
   }
 
   .leadership-header {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 16px;
+  }
+
+  .leadership-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .leadership-position {
+    font-size: 1.125rem;
+  }
+
+  .leadership-organization {
+    font-size: 0.9375rem;
+  }
+
+  .leadership-institution {
+    font-size: 0.8125rem;
+  }
+
+  .leadership-description {
+    font-size: 0.875rem;
+  }
+
+  .responsibilities-section {
+    padding: 14px;
+  }
+
+  .responsibilities-title {
+    font-size: 0.8125rem;
+  }
+
+  .responsibilities-list li {
+    font-size: 0.875rem;
+  }
+
+  .skills-card {
+    padding: 24px;
+  }
+
+  .skills-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .skill-tag {
+    padding: 10px 16px;
+    font-size: 0.875rem;
   }
 }
