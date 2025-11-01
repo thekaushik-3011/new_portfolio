@@ -194,7 +194,7 @@
   padding-left: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .nav-links {
     display: none;
   }
@@ -202,8 +202,41 @@
   .mobile-menu-btn {
     display: block;
   }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 16px;
+    height: 70px;
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  .download-btn {
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+  }
 
   .download-btn span {
     display: none;
+  }
+
+  .theme-toggle {
+    padding: 6px;
+  }
+
+  .mobile-menu {
+    top: 70px;
+  }
+
+  .mobile-menu-links {
+    padding: 12px 16px;
+  }
+
+  .mobile-nav-link {
+    padding: 14px 12px;
+    font-size: 0.9375rem;
   }
 }
