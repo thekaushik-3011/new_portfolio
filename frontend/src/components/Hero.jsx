@@ -41,7 +41,7 @@ const Hero = () => {
           </h1>
           <h2 className="hero-title">Hardware Design Engineer</h2>
           <p className="hero-subtitle">
-            VLSI Architecture • Embedded Systems • ASIC Design
+            VLSI • AI Accelerators • Processor Design • ASIC/FPGA
           </p>
           <div className="rotating-text-container">
             <p className="rotating-text" key={currentText}>
@@ -61,7 +61,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="secondary-cta"
-              onClick={() => alert('Resume download functionality')}
+              onClick={() => window.open('https://drive.google.com/file/d/1Q3jXw9kWbKIWRIjtBmrCzXU9qjXr_wEM/view?usp=sharing', '_blank')}
             >
               Download Resume
             </Button>

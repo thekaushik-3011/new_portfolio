@@ -183,19 +183,23 @@ const Contact = () => {
                 <h4 className="social-title">Connect With Me</h4>
                 <div className="social-links">
                   <a href="https://linkedin.com/in/kaushik-salla" target="_blank" rel="noopener noreferrer" className="social-link">
-                    <Linkedin size={24} />
                     <span>LinkedIn</span>
                   </a>
                   <a href="https://github.com/thekaushik-3011" target="_blank" rel="noopener noreferrer" className="social-link">
-                    <Github size={24} />
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://github.com/thekaushik-3011" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <div className="social-icon-box">
+                      <Github size={20} />
+                    </div>
                     <span>GitHub</span>
                   </a>
                 </div>
               </div>
 
-              <Button className="resume-download-btn" onClick={() => alert('Resume download')}>
+              <Button className="resume-download-btn" onClick={() => window.open('https://drive.google.com/file/d/1Q3jXw9kWbKIWRIjtBmrCzXU9qjXr_wEM/view?usp=sharing', '_blank')}>
                 <Download size={18} />
-                Download Complete Resume
+                Download Resume
               </Button>
 
               <div className="availability-section">

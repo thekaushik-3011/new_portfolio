@@ -6,44 +6,28 @@ import '../styles/achievements.css';
 const Achievements = () => {
   const achievements = [
     {
-      icon: <Trophy size={32} />,
-      category: 'Academic Achievement',
-      title: 'School Topper',
-      description: 'Kendriya Vidyalaya ONGC Chandkheda',
-      details: ['Achieved 96.8% in Higher Secondary Education (2022)', 'Consistently ranked among top 3 students throughout schooling'],
-      color: 'gold'
-    },
-    {
-      icon: <Award size={32} />,
-      category: 'Academic Achievement',
-      title: 'IIT Jodhpur Merit Admission',
-      description: 'Selected through JEE Advanced',
-      details: ['One of India\'s most competitive entrance examinations', 'Pursuing B.Tech in Electrical Engineering with strong academic standing (7.91 CGPA)'],
-      color: 'blue'
-    },
-    {
       icon: <FileText size={32} />,
       category: 'Research',
       title: 'Research Publication',
       description: 'HiPC 2025',
-      details: ['Paper accepted for review at prestigious international conference', 'Focus on cutting-edge RISC-V optimization and edge AI deployment'],
+      details: ['Paper submitted to prestigious international conference', 'Research progress at Vishv Inc. converted to publication on RISC-V optimization and edge AI deployment'],
       color: 'purple'
+    },
+    {
+      icon: <Award size={32} />,
+      category: 'Academic Achievement',
+      title: 'IIT Jodhpur Merit',
+      description: 'Selected through JEE Advanced',
+      details: ['One of India\'s most competitive entrance examinations', 'Pursuing B.Tech in Electrical Engineering with strong academic standing (7.91 CGPA)'],
+      color: 'blue'
     },
     {
       icon: <Rocket size={32} />,
       category: 'Professional Experience',
       title: 'ISRO Summer Intern',
       description: 'Indian Space Research Organization',
-      details: ['Selected for competitive internship program at India\'s premier space agency', 'Contributed to mission-critical analog IP design for space applications'],
+      details: ['Selected for competitive internship program at India\'s premier space agency', 'Designed complete analog IP from scratch - a valuable contribution to their IP design library for space applications'],
       color: 'orange'
-    },
-    {
-      icon: <FlaskConical size={32} />,
-      category: 'Professional Experience',
-      title: 'Research Intern',
-      description: 'Vishv Inc.',
-      details: ['Advanced research in RISC-V architecture and machine learning optimization', 'Achieved significant performance breakthroughs in edge AI deployment'],
-      color: 'green'
     }
   ];
 

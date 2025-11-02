@@ -85,7 +85,7 @@ const Education = () => {
                 </div>
                 <div className="detail-item">
                   <Award size={18} />
-                  <span>96.8% (School Topper)</span>
+                  <span>96.8%</span>
                 </div>
               </div>
               <p className="achievement-note">

@@ -38,7 +38,7 @@ const Navigation = ({ activeSection }) => {
   };
 
   const handleDownloadResume = () => {
-    alert('Resume download functionality - PDF will be provided');
+    window.open('https://drive.google.com/file/d/1Q3jXw9kWbKIWRIjtBmrCzXU9qjXr_wEM/view?usp=sharing', '_blank');
   };
 
   return (

@@ -13,12 +13,12 @@ const About = () => {
     {
       icon: <TrendingUp size={28} />,
       title: "Academic Excellence",
-      value: "7.91 CGPA | 96.8% (School Topper)"
+      value: "7.91 CGPA"
     },
     {
       icon: <BookOpen size={28} />,
       title: "Research Focus",
-      value: "Hardware Acceleration, VLSI, Embedded ML"
+      value: "Hardware Acceleration, VLSI, RISC-V, Embedded ML"
     },
     {
       icon: <FileText size={28} />,
@@ -49,13 +49,13 @@ const About = () => {
           <div className="about-text">
             <div className="biography">
               <p>
-                I am an Electrical Engineering student at the prestigious <strong>Indian Institute of Technology, Jodhpur</strong>, with a distinguished academic record (CGPA: 7.91/10) and a passion for pushing the boundaries of hardware innovation. My expertise spans the complete spectrum of hardware development—from analog circuit design and ASIC architecture to FPGA implementation and embedded systems optimization.
+                I'm an Electrical Engineering student at IIT Jodhpur with a deep passion for VLSI design, custom processor architectures, and high-performance computing. My interests lie in exploring how hardware and artificial intelligence converge to build faster, smarter, and more efficient systems.
+              </p>
+              <p>
+                I'm particularly passionate about RISC-V–based architectures, AI accelerators, and mixed-signal ASICs, focusing on how thoughtful design choices at the hardware level can unlock breakthroughs in speed, power efficiency, and security. With hands-on experience in RTL design, FPGA prototyping, and hardware verification, I aim to turn complex computational challenges into practical, silicon-ready solutions for next-generation computing.
               </p>
               <p>
                 My professional journey includes transformative experiences at the <strong>Indian Space Research Organization (ISRO)</strong>, where I designed mission-critical digital-to-analog converters for interplanetary missions, and <strong>Vishv Inc.</strong>, where I pioneered optimization techniques for large language model inference on resource-constrained RISC-V platforms.
-              </p>
-              <p>
-                I specialize in bridging the gap between theoretical hardware design and practical, high-performance implementations. My work emphasizes precision engineering, rigorous validation methodologies, and innovative problem-solving approaches that deliver measurable results—whether it's achieving <strong>80dB SNR</strong> in DAC designs or attaining <strong>3.4× performance improvements</strong> in parallel computing architectures.
               </p>
               <p className="highlight-text">
                 Currently seeking opportunities in semiconductor design, VLSI engineering, and advanced embedded systems development where I can contribute to next-generation hardware solutions.
